@@ -3,8 +3,10 @@
 	"version": "1.0.0",
 	"description": "template nov. 25",
 	"main": "src/index.js",
+	"type": "module",
 	"scripts": {
-		"test": "echo \"Error: no test specified\" && exit 1",
+		"test": "jest",
+		"watch": "jest --watch",
 		"lint": "npx @biomejs/biome lint --write",
 		"check": "npx @biomejs/biome check --write",
 		"format": "npx @biomejs/biome format --write",
@@ -15,7 +17,7 @@
 		"type": "git",
 		"url": "git+https://github.com/emze77/webpack-template.git"
 	},
-	"author": "marcusmeindel",
+	"author": "Marcus Meindel",
 	"license": "ISC",
 	"bugs": {
 		"url": "https://github.com/emze77/webpack-template/issues"
@@ -23,6 +25,7 @@
 	"homepage": "https://github.com/emze77/webpack-template#readme",
 	"devDependencies": {
 		"@biomejs/biome": "2.3.10",
+		"@types/jest": "^30.0.0",
 		"css-loader": "^7.1.2",
 		"html-loader": "^5.1.0",
 		"html-webpack-plugin": "^5.6.5",
@@ -30,5 +33,9 @@
 		"webpack": "^5.103.0",
 		"webpack-cli": "^6.0.1",
 		"webpack-dev-server": "^5.2.2"
+	},
+	"dependencies": {
+		"@babel/preset-env": "^7.29.0",
+		"jest": "^30.3.0"
 	}
 }
